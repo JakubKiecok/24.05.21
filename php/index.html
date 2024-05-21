@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="border-radius: 25px; width: 600px; padding: 20px; margin: auto; text-align: center; color: darkred; font-size: 2rem;">
+        <legend>Java Script to super jezyk</legend>
+        <div style="width: 600px; padding: 20px;">
+            <form name="myform" id="myform">
+                <select name="dane" id="dane" style="font-size: 2rem;">
+                    <option value="Wybierz">Wybierz</option>
+                    <option value="arek">opt 1</option>
+                    <option value="wrek">opt 2</option>
+                    <option value="krek">opt 3</option>
+                    <option value="brek">opt 4</option>
+                </select>
+            </form>
+        </div>
+    </fieldset>
+    <div id="wynik" style="border-radius: 25px; width: 600px; padding: 20px; margin: auto; text-align: center; color: darkblue; border: 1px black solid; font-size: 2rem;">
+
+    </div>
+    <script>
+        let myselect = document.getElementById("dane");
+        myselect.addEventListener("change",(event)=>{
+            let wynik = document.getElementById("wynik");
+            wynik.innerHTML = event.target.value;
+        });
+    </script>
+</body>
+</html>
